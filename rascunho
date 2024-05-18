@@ -1,0 +1,30 @@
+-> Calculadora inteligente
+
+rever e tentar introduzir o codigo
+
+if(numb1 == 0)
+    printf("Programa encerrado");
+    break;
+  else
+    fflush(stdin);
+    printf("Digite a operação (+/-): \n");
+    scanf(" %c", &operacao);
+
+    printf("Digite o segundo numero: \n");
+    scanf("%d", &numb2);
+
+    while(operacao != '+' && operacao != '-'){
+      fflush(stdin);
+      printf("Digite a operação novamente (+/-): \n");
+      scanf(" %c", &operacao);
+    }
+    switch(operacao){
+      case '+':
+        printf("O resultado é %d + %d é %d \n", numb1, numb2, numb1 + numb2);
+        break;
+
+      case '-':
+        printf("O resultado é %d - %d é %d \n", numb1, numb2, numb1 - numb2);
+        break;
+    } 
+}
